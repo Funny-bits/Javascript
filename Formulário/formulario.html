@@ -1,0 +1,105 @@
+<!DOCTYPE HTML> <!--formato do documento-->
+<html lang="pt-br"> <!--reconhecer o idioma padrão-->
+	<head>
+		<meta charset="UTF-8"><!--reconhecer acentuos e caracteres especiais-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FunnyBits - Programação Web</title><!--O nome que aparece na aba do navegador-->
+    <link rel="icon" href="imagens/favicon.png">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<script type="text/javascript">// <!--formato do documento-->
+
+      function enviar(mensagem){ // <!--função para enviar uma mensagem-->
+      alert("a mensagem foi enviada:" +mensagem)
+
+      function Enviar() { // <!--função para enviar o nome que foi cadastrado-->
+ 
+    var nome = document.getElementById("nomeid");
+ 
+    if (nome.value != "") {// verifica os campos e mostra um alert de confirmação
+        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+    }
+ 
+}
+
+		</script>
+ 
+  </head>
+
+  <body>
+<form name="formulario">
+    <div class="container">
+
+      <div class="page-header">
+        <h2>FunnyBits - Login</h2><!--título que aparece na area de navegação-->
+        </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <h3>Cadastre-se</h3> <!--título que aparece na area de navegação-->
+        <form><!--Para fazer o formulário-->
+
+          <div class="form-group">
+            <label for="nome">Nome</label><!--caixa-->
+            <input type="text" class="form-control" id="nomeid" placeholder=" digite seu nome completo"> <!--placeholder é a dica para o usuário-->
+
+             <div class="form-group">
+            <label for="email">Email</label><!--caixa email-->
+            <input type="email" class="form-control" id="email"  placeholder=" digite seu email"> <!--placeholder é a dica para o usuário-->
+
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="email" class="form-control" id="senha" placeholder=" digite sua senha"><!--placeholder é a dica para o usuário-->
+            </div>
+            
+          </div>
+                 
+           </div> <!--final da div de cadastro-->
+      </div>
+      </form><!--Final do formulário-->
+
+      <!--Para fazer os botões-->
+      <button type="submit" class="button button-primary btn-branco">Cadastrar</button><!--botão cadastrar-->
+
+  <div class="row"> <!--divisão em colunas-->
+        <div class="col-sm-8"><!--grid para o campo logar-->
+
+        <h3>Logar</h3><!---->
+
+          <div class="form-group"> <!--caixa para o e-mail-->
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder=" digite seu email principal"> <!--placeholder é a dica para o usuário-->
+
+            </div>
+
+             <div class="form-group">
+            <label for="senha">Senha</label><!--caixa para senha-->
+            <input type="password" class="form-control" id="senha" placeholder=" digite sua senha"><!--dica para o usuário-->
+            </div>
+            <!--Botao logar-->
+            <button type="submit" class="button button-primary btn-cinza">Logar</button>
+    </div><!-- final do grid para o campo logar-->
+      </div>
+      <footer>
+        <p>
+          Todos os direitos reservados a Funny-Bits
+        </p>
+      </footer>
+  </body>
+  
+  </html>
